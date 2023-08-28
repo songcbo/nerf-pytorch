@@ -537,6 +537,7 @@ def train():
     args = parser.parse_args()
 
     # Load data
+    # 1
     K = None
     if args.dataset_type == 'llff':
         images, poses, bds, render_poses, i_test = load_llff_data(args.datadir, args.factor,
